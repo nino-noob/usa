@@ -1,45 +1,113 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>うさぎ薬局</title>
+  <!-- Google Fontsを追加 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" />
   <style>
+    /* 全体フォントと背景 */
     body {
-      font-family: "Hiragino Kaku Gothic Pro", sans-serif;
+      font-family: 'Noto Sans JP', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      background-color: #e6f2f1;
+      color: #2c3e50;
+      line-height: 1.6;
     }
+    /* ヘッダー */
     header {
-      background-color: #4CAF50;
+      background-color: #27ae60;
       color: white;
-      padding: 1.5rem;
+      padding: 2rem 1rem;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      letter-spacing: 1.5px;
     }
+    header h1 {
+      margin: 0 0 0.3rem 0;
+      font-weight: 900;
+      font-size: 2.8rem;
+    }
+    header p {
+      margin: 0;
+      font-weight: 500;
+      font-size: 1.1rem;
+      opacity: 0.85;
+    }
+    /* ナビゲーション */
     nav {
-      background-color: #e0f2f1;
-      padding: 1rem;
+      background-color: #d1ebe7;
+      padding: 1rem 0;
       text-align: center;
+      box-shadow: inset 0 -2px 0 #27ae60;
     }
     nav a {
-      margin: 0 1rem;
+      color: #27ae60;
       text-decoration: none;
-      color: #00796B;
-      font-weight: bold;
+      font-weight: 700;
+      margin: 0 1.2rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      font-size: 1rem;
+      display: inline-block;
     }
+    nav a:hover,
+    nav a:focus {
+      background-color: #27ae60;
+      color: #e6f2f1;
+      outline: none;
+    }
+    /* メイン部分 */
     main {
-      padding: 2rem;
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem 4rem;
     }
     section {
-      margin-bottom: 2rem;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(39, 174, 96, 0.15);
+      padding: 2rem 2.5rem;
+      margin-bottom: 3rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+    section:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 30px rgba(39, 174, 96, 0.3);
+    }
+    section h2 {
+      border-bottom: 3px solid #27ae60;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.4rem;
+      font-weight: 800;
+      font-size: 1.8rem;
+      letter-spacing: 0.05em;
+      color: #2c3e50;
+    }
+    section p, section ul {
+      font-size: 1.05rem;
+      color: #34495e;
+    }
+    ul {
+      list-style: disc inside;
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.7rem;
+    }
+    /* フッター */
     footer {
-      background-color: #4CAF50;
+      background-color: #27ae60;
       color: white;
       text-align: center;
-      padding: 1rem;
+      padding: 1.3rem 1rem;
+      font-size: 0.95rem;
+      letter-spacing: 0.1em;
+      box-shadow: 0 -4px 8px rgba(0,0,0,0.12);
     }
   </style>
 </head>
@@ -59,9 +127,9 @@
 
 <main>
   <section id="about">
-  <h2>薬局について</h2>
-  <p>うさぎ薬局は、地域に根ざした信頼される薬局を目指し、丁寧で親切な対応を心がけています。</p>
-</section>
+    <h2>薬局について</h2>
+    <p>うさぎ薬局は、地域に根ざした信頼される薬局を目指し、丁寧で親切な対応を心がけています。</p>
+  </section>
 
   <section id="services">
     <h2>主なサービス</h2>
